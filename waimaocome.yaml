@@ -1,0 +1,500 @@
+---
+mixed-port: 7893
+allow-lan: true
+mode: rule
+ipv6: false
+log-level: warning
+external-controller: 0.0.0.0:9090
+global-client-fingerprint: chrome
+geox-url:
+  geoip: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat
+  geosite: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat
+  mmdb: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb
+dns:
+  enabled: true
+  nameserver:
+  - 202.103.24.68
+  - 202.103.44.150
+  default-nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  - 180.76.76.76
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  listen: 0.0.0.0:7874
+  fake-ip-filter:
+  - geosite:cn
+proxies:
+- name: C01 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  type: vmess
+  server: cg1c01.waimaoglobaldirect.cc
+  port: 443
+  uuid: 598395e6-f4e3-46fa-ba85-0a8e48c9d677
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  client-fingerprint: ''
+  fingerprint: ''
+  flow: ''
+  skip-cert-verify: false
+  servername: cg1c01.waimaoglobaldirect.cc
+  network: ws
+  ws-opts:
+    path: "/api/v1/graphql"
+    headers:
+      Host: cg1c01.waimaoglobaldirect.cc
+  h2-opts:
+  http-opts:
+  grpc-opts:
+  reality-opts:
+- name: C02 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  type: vmess
+  server: cg1c02.waimaoglobaldirect.cc
+  port: 443
+  uuid: 598395e6-f4e3-46fa-ba85-0a8e48c9d677
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  client-fingerprint: ''
+  fingerprint: ''
+  flow: ''
+  skip-cert-verify: false
+  servername: cg1c02.waimaoglobaldirect.cc
+  network: ws
+  ws-opts:
+    path: "/api/v1/graphql"
+    headers:
+      Host: cg1c02.waimaoglobaldirect.cc
+  h2-opts:
+  http-opts:
+  grpc-opts:
+  reality-opts:
+- name: C03 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  type: vmess
+  server: cg1c03.waimaoglobaldirect.cc
+  port: 443
+  uuid: 598395e6-f4e3-46fa-ba85-0a8e48c9d677
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  client-fingerprint: ''
+  fingerprint: ''
+  flow: ''
+  skip-cert-verify: false
+  servername: cg1c03.waimaoglobaldirect.cc
+  network: ws
+  ws-opts:
+    path: "/api/v1/graphql"
+    headers:
+      Host: cg1c03.waimaoglobaldirect.cc
+  h2-opts:
+  http-opts:
+  grpc-opts:
+  reality-opts:
+- name: C04 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  type: vmess
+  server: cg1c04.waimaoglobaldirect.cc
+  port: 443
+  uuid: 598395e6-f4e3-46fa-ba85-0a8e48c9d677
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  client-fingerprint: ''
+  fingerprint: ''
+  flow: ''
+  skip-cert-verify: false
+  servername: cg1c04.waimaoglobaldirect.cc
+  network: ws
+  ws-opts:
+    path: "/api/v1/graphql"
+    headers:
+      Host: cg1c04.waimaoglobaldirect.cc
+  h2-opts:
+  http-opts:
+  grpc-opts:
+  reality-opts:
+- name: C05 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  type: vmess
+  server: cg1c05.waimaoglobaldirect.cc
+  port: 443
+  uuid: 598395e6-f4e3-46fa-ba85-0a8e48c9d677
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  client-fingerprint: ''
+  fingerprint: ''
+  flow: ''
+  skip-cert-verify: false
+  servername: cg1c05.waimaoglobaldirect.cc
+  network: ws
+  ws-opts:
+    path: "/api/v1/graphql"
+    headers:
+      Host: cg1c05.waimaoglobaldirect.cc
+  h2-opts:
+  http-opts:
+  grpc-opts:
+  reality-opts:
+- name: C06 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  type: vmess
+  server: cg1c06.waimaoglobaldirect.cc
+  port: 443
+  uuid: 598395e6-f4e3-46fa-ba85-0a8e48c9d677
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  client-fingerprint: ''
+  fingerprint: ''
+  flow: ''
+  skip-cert-verify: false
+  servername: cg1c06.waimaoglobaldirect.cc
+  network: ws
+  ws-opts:
+    path: "/api/v1/graphql"
+    headers:
+      Host: cg1c06.waimaoglobaldirect.cc
+  h2-opts:
+  http-opts:
+  grpc-opts:
+  reality-opts:
+- name: C07 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  type: vmess
+  server: cg1c07.waimaoglobaldirect.cc
+  port: 443
+  uuid: 598395e6-f4e3-46fa-ba85-0a8e48c9d677
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  client-fingerprint: ''
+  fingerprint: ''
+  flow: ''
+  skip-cert-verify: false
+  servername: cg1c07.waimaoglobaldirect.cc
+  network: ws
+  ws-opts:
+    path: "/api/v1/graphql"
+    headers:
+      Host: cg1c07.waimaoglobaldirect.cc
+  h2-opts:
+  http-opts:
+  grpc-opts:
+  reality-opts:
+- name: C08 | 俄罗斯 | 1000M带宽 | CN2 GIA 三网直连线路
+  type: vmess
+  server: cg1c08.waimaoglobaldirect.cc
+  port: 443
+  uuid: 598395e6-f4e3-46fa-ba85-0a8e48c9d677
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  client-fingerprint: ''
+  fingerprint: ''
+  flow: ''
+  skip-cert-verify: false
+  servername: cg1c08.waimaoglobaldirect.cc
+  network: ws
+  ws-opts:
+    path: "/api/v1/graphql"
+    headers:
+      Host: cg1c08.waimaoglobaldirect.cc
+  h2-opts:
+  http-opts:
+  grpc-opts:
+  reality-opts:
+- name: C09 | 俄罗斯 | 1000M带宽 | CN2 GIA 三网直连线路
+  type: vmess
+  server: cg1c09.waimaoglobaldirect.cc
+  port: 443
+  uuid: 598395e6-f4e3-46fa-ba85-0a8e48c9d677
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  client-fingerprint: ''
+  fingerprint: ''
+  flow: ''
+  skip-cert-verify: false
+  servername: cg1c09.waimaoglobaldirect.cc
+  network: ws
+  ws-opts:
+    path: "/api/v1/graphql"
+    headers:
+      Host: cg1c09.waimaoglobaldirect.cc
+  h2-opts:
+  http-opts:
+  grpc-opts:
+  reality-opts:
+- name: C10 | 日本 | 1000M带宽 | 外贸专线
+  type: vmess
+  server: cg1c10.waimaoglobaldirect.cc
+  port: 443
+  uuid: 598395e6-f4e3-46fa-ba85-0a8e48c9d677
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  client-fingerprint: ''
+  fingerprint: ''
+  flow: ''
+  skip-cert-verify: false
+  servername: cg1c10.waimaoglobaldirect.cc
+  network: ws
+  ws-opts:
+    path: "/api/v1/graphql"
+    headers:
+      Host: cg1c10.waimaoglobaldirect.cc
+  h2-opts:
+  http-opts:
+  grpc-opts:
+  reality-opts:
+- name: C11 | 日本 | 1000M带宽 | 外贸专线
+  type: vmess
+  server: cg1c11.waimaoglobaldirect.cc
+  port: 443
+  uuid: 598395e6-f4e3-46fa-ba85-0a8e48c9d677
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  client-fingerprint: ''
+  fingerprint: ''
+  flow: ''
+  skip-cert-verify: false
+  servername: cg1c11.waimaoglobaldirect.cc
+  network: ws
+  ws-opts:
+    path: "/api/v1/graphql"
+    headers:
+      Host: cg1c11.waimaoglobaldirect.cc
+  h2-opts:
+  http-opts:
+  grpc-opts:
+  reality-opts:
+- name: C12 | 英国 | 1000M带宽 | 外贸及Tiktok专线
+  type: vmess
+  server: cg1c12.waimaoglobaldirect.cc
+  port: 443
+  uuid: 598395e6-f4e3-46fa-ba85-0a8e48c9d677
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  client-fingerprint: ''
+  fingerprint: ''
+  flow: ''
+  skip-cert-verify: false
+  servername: cg1c12.waimaoglobaldirect.cc
+  network: ws
+  ws-opts:
+    path: "/api/v1/graphql"
+    headers:
+      Host: cg1c12.waimaoglobaldirect.cc
+  h2-opts:
+  http-opts:
+  grpc-opts:
+  reality-opts:
+- name: C13 | 荷兰 | 1000M带宽 | 外贸专线
+  type: vmess
+  server: cg1c13.waimaoglobaldirect.cc
+  port: 443
+  uuid: 598395e6-f4e3-46fa-ba85-0a8e48c9d677
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  client-fingerprint: ''
+  fingerprint: ''
+  flow: ''
+  skip-cert-verify: false
+  servername: cg1c13.waimaoglobaldirect.cc
+  network: ws
+  ws-opts:
+    path: "/api/v1/graphql"
+    headers:
+      Host: cg1c13.waimaoglobaldirect.cc
+  h2-opts:
+  http-opts:
+  grpc-opts:
+  reality-opts:
+- name: C14 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  type: vmess
+  server: cg1c14.waimaoglobaldirect.cc
+  port: 443
+  uuid: 598395e6-f4e3-46fa-ba85-0a8e48c9d677
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  client-fingerprint: ''
+  fingerprint: ''
+  flow: ''
+  skip-cert-verify: false
+  servername: cg1c14.waimaoglobaldirect.cc
+  network: ws
+  ws-opts:
+    path: "/api/v1/graphql"
+    headers:
+      Host: cg1c14.waimaoglobaldirect.cc
+  h2-opts:
+  http-opts:
+  grpc-opts:
+  reality-opts:
+- name: C15 | 韩国 | 1000M带宽 | 外贸专线
+  type: vmess
+  server: cg1c15.waimaoglobaldirect.cc
+  port: 443
+  uuid: 598395e6-f4e3-46fa-ba85-0a8e48c9d677
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  client-fingerprint: ''
+  fingerprint: ''
+  flow: ''
+  skip-cert-verify: false
+  servername: cg1c15.waimaoglobaldirect.cc
+  network: ws
+  ws-opts:
+    path: "/api/v1/graphql"
+    headers:
+      Host: cg1c15.waimaoglobaldirect.cc
+  h2-opts:
+  http-opts:
+  grpc-opts:
+  reality-opts:
+- name: C16 | 韩国 | 1000M带宽 | 外贸专线
+  type: vmess
+  server: cg1c16.waimaoglobaldirect.cc
+  port: 443
+  uuid: 598395e6-f4e3-46fa-ba85-0a8e48c9d677
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  client-fingerprint: ''
+  fingerprint: ''
+  flow: ''
+  skip-cert-verify: false
+  servername: cg1c16.waimaoglobaldirect.cc
+  network: ws
+  ws-opts:
+    path: "/api/v1/graphql"
+    headers:
+      Host: cg1c16.waimaoglobaldirect.cc
+  h2-opts:
+  http-opts:
+  grpc-opts:
+  reality-opts:
+proxy-groups:
+- name: 节点选择
+  type: select
+  proxies:
+  - 自动选择
+  - DIRECT
+  - C01 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C02 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C03 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C04 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C05 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C06 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C07 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C08 | 俄罗斯 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C09 | 俄罗斯 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C10 | 日本 | 1000M带宽 | 外贸专线
+  - C11 | 日本 | 1000M带宽 | 外贸专线
+  - C12 | 英国 | 1000M带宽 | 外贸及Tiktok专线
+  - C13 | 荷兰 | 1000M带宽 | 外贸专线
+  - C14 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C15 | 韩国 | 1000M带宽 | 外贸专线
+  - C16 | 韩国 | 1000M带宽 | 外贸专线
+- name: 自动选择
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  proxies:
+  - C01 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C02 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C03 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C04 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C05 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C06 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C07 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C08 | 俄罗斯 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C09 | 俄罗斯 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C10 | 日本 | 1000M带宽 | 外贸专线
+  - C11 | 日本 | 1000M带宽 | 外贸专线
+  - C12 | 英国 | 1000M带宽 | 外贸及Tiktok专线
+  - C13 | 荷兰 | 1000M带宽 | 外贸专线
+  - C14 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C15 | 韩国 | 1000M带宽 | 外贸专线
+  - C16 | 韩国 | 1000M带宽 | 外贸专线
+- name: 全球直连
+  type: select
+  proxies:
+  - DIRECT
+  - 节点选择
+- name: 全球拦截
+  type: select
+  proxies:
+  - REJECT
+- name: 漏网之鱼
+  type: select
+  proxies:
+  - DIRECT
+  - 节点选择
+rule-providers:
+  cn:
+    behavior: domain
+    interval: 86400
+    path: "./rule_provider/cn_domain.yaml"
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.yaml
+rules:
+- RULE-SET,cn,全球直连
+- GEOSITE,category-ads-all,全球拦截
+- GEOSITE,private,全球直连
+- GEOSITE,youtube,节点选择
+- GEOSITE,google,节点选择
+- GEOSITE,twitter,节点选择
+- GEOSITE,pixiv,节点选择
+- GEOSITE,category-scholar-!cn,节点选择
+- GEOSITE,onedrive,全球直连
+- GEOSITE,microsoft@cn,全球直连
+- GEOSITE,apple-cn,全球直连
+- GEOSITE,steam@cn,全球直连
+- GEOSITE,category-games@cn,全球直连
+- GEOSITE,geolocation-!cn,节点选择
+- GEOSITE,cn,全球直连
+- GEOIP,private,全球直连,no-resolve
+- GEOIP,telegram,节点选择
+- GEOIP,JP,节点选择
+- GEOIP,CN,全球直连
+- DST-PORT,80/8080/443/8443,节点选择
+- MATCH,全球直连
+redir-port: 7892
+tproxy-port: 7895
+port: 7890
+socks-port: 7891
+secret: x2HqpACA
+bind-address: "*"
+external-ui: "/usr/share/openclash/ui"
+keep-alive-interval: 15
+keep-alive-idle: 600
+geodata-mode: true
+tcp-concurrent: true
+unified-delay: true
+profile:
+  store-selected: true
+authentication:
+- Clash:1mEkOehG
