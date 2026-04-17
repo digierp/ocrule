@@ -1,0 +1,813 @@
+---
+mixed-port: 7893
+allow-lan: true
+mode: rule
+ipv6: false
+log-level: warning
+external-controller: 0.0.0.0:9090
+global-client-fingerprint: chrome
+geox-url:
+  geoip: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat
+  geosite: https://testingcf.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat
+  mmdb: https://testingcf.jsdelivr.net/gh/alecthw/mmdb_china_ip_list@release/lite/Country.mmdb
+  asn: https://testingcf.jsdelivr.net/gh/xishang0128/geoip@release/GeoLite2-ASN.mmdb
+dns:
+  enabled: true
+  nameserver:
+  - 223.5.5.5
+  - https://dns.alidns.com/dns-query
+  default-nameserver:
+  - 114.114.114.114
+  - 223.5.5.5
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  listen: 0.0.0.0:7874
+  respect-rules: false
+  fake-ip-filter:
+  - geosite:cn
+proxies:
+- name: C01 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  type: vmess
+  server: cg1c01.waimaojd.com
+  port: 443
+  uuid: 598395e6-f4e3-46fa-ba85-0a8e48c9d677
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  client-fingerprint: ''
+  fingerprint: ''
+  flow: ''
+  skip-cert-verify: false
+  servername: cg1c01.waimaojd.com
+  network: ws
+  ws-opts:
+    path: "/api/v1/graphql"
+    headers:
+      Host: cg1c01.waimaojd.com
+  h2-opts:
+  http-opts:
+  grpc-opts:
+  reality-opts:
+- name: C02 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  type: vmess
+  server: cg1c02.waimaojd.com
+  port: 443
+  uuid: 598395e6-f4e3-46fa-ba85-0a8e48c9d677
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  client-fingerprint: ''
+  fingerprint: ''
+  flow: ''
+  skip-cert-verify: false
+  servername: cg1c02.waimaojd.com
+  network: ws
+  ws-opts:
+    path: "/api/v1/graphql"
+    headers:
+      Host: cg1c02.waimaojd.com
+  h2-opts:
+  http-opts:
+  grpc-opts:
+  reality-opts:
+- name: C03 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  type: vmess
+  server: cg1c03.waimaojd.com
+  port: 443
+  uuid: 598395e6-f4e3-46fa-ba85-0a8e48c9d677
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  client-fingerprint: ''
+  fingerprint: ''
+  flow: ''
+  skip-cert-verify: false
+  servername: cg1c03.waimaojd.com
+  network: ws
+  ws-opts:
+    path: "/api/v1/graphql"
+    headers:
+      Host: cg1c03.waimaojd.com
+  h2-opts:
+  http-opts:
+  grpc-opts:
+  reality-opts:
+- name: C04 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  type: vmess
+  server: cg1c04.waimaojd.com
+  port: 443
+  uuid: 598395e6-f4e3-46fa-ba85-0a8e48c9d677
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  client-fingerprint: ''
+  fingerprint: ''
+  flow: ''
+  skip-cert-verify: false
+  servername: cg1c04.waimaojd.com
+  network: ws
+  ws-opts:
+    path: "/api/v1/graphql"
+    headers:
+      Host: cg1c04.waimaojd.com
+  h2-opts:
+  http-opts:
+  grpc-opts:
+  reality-opts:
+- name: C05 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  type: vmess
+  server: cg1c05.waimaojd.com
+  port: 443
+  uuid: 598395e6-f4e3-46fa-ba85-0a8e48c9d677
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  client-fingerprint: ''
+  fingerprint: ''
+  flow: ''
+  skip-cert-verify: false
+  servername: cg1c05.waimaojd.com
+  network: ws
+  ws-opts:
+    path: "/api/v1/graphql"
+    headers:
+      Host: cg1c05.waimaojd.com
+  h2-opts:
+  http-opts:
+  grpc-opts:
+  reality-opts:
+- name: C06 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  type: vmess
+  server: cg1c06.waimaojd.com
+  port: 443
+  uuid: 598395e6-f4e3-46fa-ba85-0a8e48c9d677
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  client-fingerprint: ''
+  fingerprint: ''
+  flow: ''
+  skip-cert-verify: false
+  servername: cg1c06.waimaojd.com
+  network: ws
+  ws-opts:
+    path: "/api/v1/graphql"
+    headers:
+      Host: cg1c06.waimaojd.com
+  h2-opts:
+  http-opts:
+  grpc-opts:
+  reality-opts:
+- name: C07 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  type: vmess
+  server: cg1c07.waimaojd.com
+  port: 443
+  uuid: 598395e6-f4e3-46fa-ba85-0a8e48c9d677
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  client-fingerprint: ''
+  fingerprint: ''
+  flow: ''
+  skip-cert-verify: false
+  servername: cg1c07.waimaojd.com
+  network: ws
+  ws-opts:
+    path: "/api/v1/graphql"
+    headers:
+      Host: cg1c07.waimaojd.com
+  h2-opts:
+  http-opts:
+  grpc-opts:
+  reality-opts:
+- name: C08 | 俄罗斯 | 1000M带宽 | CN2 GIA 三网直连线路
+  type: vmess
+  server: cg1c08.waimaojd.com
+  port: 443
+  uuid: 598395e6-f4e3-46fa-ba85-0a8e48c9d677
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  client-fingerprint: ''
+  fingerprint: ''
+  flow: ''
+  skip-cert-verify: false
+  servername: cg1c08.waimaojd.com
+  network: ws
+  ws-opts:
+    path: "/api/v1/graphql"
+    headers:
+      Host: cg1c08.waimaojd.com
+  h2-opts:
+  http-opts:
+  grpc-opts:
+  reality-opts:
+- name: C09 | 俄罗斯 | 1000M带宽 | CN2 GIA 三网直连线路
+  type: vmess
+  server: cg1c09.waimaojd.com
+  port: 443
+  uuid: 598395e6-f4e3-46fa-ba85-0a8e48c9d677
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  client-fingerprint: ''
+  fingerprint: ''
+  flow: ''
+  skip-cert-verify: false
+  servername: cg1c09.waimaojd.com
+  network: ws
+  ws-opts:
+    path: "/api/v1/graphql"
+    headers:
+      Host: cg1c09.waimaojd.com
+  h2-opts:
+  http-opts:
+  grpc-opts:
+  reality-opts:
+- name: C10 | 日本 | 1000M带宽 | 外贸专线
+  type: vmess
+  server: cg1c10.waimaojd.com
+  port: 443
+  uuid: 598395e6-f4e3-46fa-ba85-0a8e48c9d677
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  client-fingerprint: ''
+  fingerprint: ''
+  flow: ''
+  skip-cert-verify: false
+  servername: cg1c10.waimaojd.com
+  network: ws
+  ws-opts:
+    path: "/api/v1/graphql"
+    headers:
+      Host: cg1c10.waimaojd.com
+  h2-opts:
+  http-opts:
+  grpc-opts:
+  reality-opts:
+- name: C11 | 日本 | 1000M带宽 | 外贸专线
+  type: vmess
+  server: cg1c11.waimaojd.com
+  port: 443
+  uuid: 598395e6-f4e3-46fa-ba85-0a8e48c9d677
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  client-fingerprint: ''
+  fingerprint: ''
+  flow: ''
+  skip-cert-verify: false
+  servername: cg1c11.waimaojd.com
+  network: ws
+  ws-opts:
+    path: "/api/v1/graphql"
+    headers:
+      Host: cg1c11.waimaojd.com
+  h2-opts:
+  http-opts:
+  grpc-opts:
+  reality-opts:
+- name: C12 | 英国 | 1000M带宽 | 外贸及Tiktok专线
+  type: vmess
+  server: cg1c12.waimaojd.com
+  port: 443
+  uuid: 598395e6-f4e3-46fa-ba85-0a8e48c9d677
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  client-fingerprint: ''
+  fingerprint: ''
+  flow: ''
+  skip-cert-verify: false
+  servername: cg1c12.waimaojd.com
+  network: ws
+  ws-opts:
+    path: "/api/v1/graphql"
+    headers:
+      Host: cg1c12.waimaojd.com
+  h2-opts:
+  http-opts:
+  grpc-opts:
+  reality-opts:
+- name: C13 | 荷兰 | 1000M带宽 | 外贸专线
+  type: vmess
+  server: cg1c13.waimaojd.com
+  port: 443
+  uuid: 598395e6-f4e3-46fa-ba85-0a8e48c9d677
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  client-fingerprint: ''
+  fingerprint: ''
+  flow: ''
+  skip-cert-verify: false
+  servername: cg1c13.waimaojd.com
+  network: ws
+  ws-opts:
+    path: "/api/v1/graphql"
+    headers:
+      Host: cg1c13.waimaojd.com
+  h2-opts:
+  http-opts:
+  grpc-opts:
+  reality-opts:
+- name: C14 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  type: vmess
+  server: cg1c14.waimaojd.com
+  port: 443
+  uuid: 598395e6-f4e3-46fa-ba85-0a8e48c9d677
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  client-fingerprint: ''
+  fingerprint: ''
+  flow: ''
+  skip-cert-verify: false
+  servername: cg1c14.waimaojd.com
+  network: ws
+  ws-opts:
+    path: "/api/v1/graphql"
+    headers:
+      Host: cg1c14.waimaojd.com
+  h2-opts:
+  http-opts:
+  grpc-opts:
+  reality-opts:
+- name: C15 | 美国 | 1000M带宽 | 外贸专线
+  type: vmess
+  server: cg1c15.waimaojd.com
+  port: 443
+  uuid: 598395e6-f4e3-46fa-ba85-0a8e48c9d677
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  client-fingerprint: ''
+  fingerprint: ''
+  flow: ''
+  skip-cert-verify: false
+  servername: cg1c15.waimaojd.com
+  network: ws
+  ws-opts:
+    path: "/api/v1/graphql"
+    headers:
+      Host: cg1c15.waimaojd.com
+  h2-opts:
+  http-opts:
+  grpc-opts:
+  reality-opts:
+- name: C16 | 美国 | 1000M带宽 | 外贸专线
+  type: vmess
+  server: cg1c16.waimaojd.com
+  port: 443
+  uuid: 598395e6-f4e3-46fa-ba85-0a8e48c9d677
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  client-fingerprint: ''
+  fingerprint: ''
+  flow: ''
+  skip-cert-verify: false
+  servername: cg1c16.waimaojd.com
+  network: ws
+  ws-opts:
+    path: "/api/v1/graphql"
+    headers:
+      Host: cg1c16.waimaojd.com
+  h2-opts:
+  http-opts:
+  grpc-opts:
+  reality-opts:
+proxy-groups:
+- name: "\U0001F680 节点选择"
+  type: select
+  proxies:
+  - "♻️ 自动选择"
+  - DIRECT
+  - C01 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C02 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C03 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C04 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C05 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C06 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C07 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C08 | 俄罗斯 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C09 | 俄罗斯 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C10 | 日本 | 1000M带宽 | 外贸专线
+  - C11 | 日本 | 1000M带宽 | 外贸专线
+  - C12 | 英国 | 1000M带宽 | 外贸及Tiktok专线
+  - C13 | 荷兰 | 1000M带宽 | 外贸专线
+  - C14 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C15 | 美国 | 1000M带宽 | 外贸专线
+  - C16 | 美国 | 1000M带宽 | 外贸专线
+- name: "♻️ 自动选择"
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  proxies:
+  - C01 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C02 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C03 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C04 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C05 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C06 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C07 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C08 | 俄罗斯 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C09 | 俄罗斯 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C10 | 日本 | 1000M带宽 | 外贸专线
+  - C11 | 日本 | 1000M带宽 | 外贸专线
+  - C12 | 英国 | 1000M带宽 | 外贸及Tiktok专线
+  - C13 | 荷兰 | 1000M带宽 | 外贸专线
+  - C14 | 美国 | 1000M带宽 | CN2 GIA 三网直连线路
+  - C15 | 美国 | 1000M带宽 | 外贸专线
+  - C16 | 美国 | 1000M带宽 | 外贸专线
+- name: "\U0001F3AF 全球直连"
+  type: select
+  proxies:
+  - DIRECT
+  - "\U0001F680 节点选择"
+- name: "\U0001F6D1 全球拦截"
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+  - "\U0001F680 节点选择"
+- name: "\U0001F41F 漏网之鱼"
+  type: select
+  proxies:
+  - DIRECT
+  - "\U0001F680 节点选择"
+rule-providers:
+  clashwm:
+    type: http
+    behavior: classical
+    url: https://jipzhwgz.clientdownloads.xyz/downloads/clashwm.list
+    format: text
+    interval: 3600
+    path: "./rule_provider/clashwm.list"
+  # --- 自定义规则 ---
+  direct_list:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/digierp/ocrule/refs/heads/main/Direct.list
+    format: text
+    interval: 3600
+
+  proxylite_list:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/digierp/ocrule/refs/heads/main/ProxyLite.list
+    format: text
+    interval: 3600
+
+  ai_list:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/digierp/ocrule/refs/heads/main/AI.list
+    format: text
+    interval: 3600
+
+  # --- ACL4SSR 基础规则 ---
+  lan_list:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+    format: text
+    interval: 3600
+
+  unban_list:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
+    format: text
+    interval: 3600
+
+  ban_ad:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+    format: text
+    interval: 3600
+
+  google_cn:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
+    format: text
+    interval: 3600
+
+  steam_cn:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
+    format: text
+    interval: 3600
+
+  # --- BlackMatrix7 规则 ---
+  fcm_list:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GoogleFCM/GoogleFCM.list
+    format: text
+    interval: 3600
+
+  github_list:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.list
+    format: text
+    interval: 3600
+
+  google_list:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.list
+    format: text
+    interval: 3600
+
+  bing_list:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Bing.list
+    format: text
+    interval: 3600
+
+  onedrive_list:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OneDrive/OneDrive.list
+    format: text
+    interval: 3600
+
+  microsoft_list:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
+    format: text
+    interval: 3600
+
+  apple_list:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list
+    format: text
+    interval: 3600
+
+  telegram_list:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.list
+    format: text
+    interval: 3600
+
+  speedtest_list:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Speedtest/Speedtest.list
+    format: text
+    interval: 3600
+
+  youtube_list:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
+    format: text
+    interval: 3600
+
+  # --- 游戏平台 ---
+  epic_list:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Epic.list
+    format: text
+    interval: 3600
+
+  origin_list:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Origin.list
+    format: text
+    interval: 3600
+
+  sony_list:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Sony.list
+    format: text
+    interval: 3600
+
+  steam_list:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list
+    format: text
+    interval: 3600
+
+  nintendo_list:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Nintendo.list
+    format: text
+    interval: 3600
+
+  # --- 媒体与流媒体 ---
+  netflix_list:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Netflix.list
+    format: text
+    interval: 3600
+
+  tiktok_list:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.list
+    format: text
+    interval: 3600
+
+  china_media_list:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMedia/ChinaMedia.list
+    format: text
+    interval: 3600
+
+  proxy_media_list:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
+    format: text
+    interval: 3600
+
+  # --- 兜底与国内规则 ---
+  proxy_gfw_list:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
+    format: text
+    interval: 3600
+
+  china_domain_list:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+    format: text
+    interval: 3600
+
+  china_ip_list:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+    format: text
+    interval: 3600
+
+  download_list:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
+    format: text
+    interval: 3600
+
+  china_list:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China.list
+    format: text
+    interval: 3600
+rules:
+- DOMAIN-KEYWORD,okx,♻️ 自动选择
+- DOMAIN-KEYWORD,intercom,♻️ 自动选择
+- DOMAIN-KEYWORD,gihiji,♻️ 自动选择
+- "GEOIP,private,\U0001F3AF 全球直连"
+- "GEOSITE,category-ads-all,\U0001F6D1 全球拦截"
+- "GEOSITE,gfw,\U0001F680 节点选择"
+- "GEOIP,TELEGRAM,\U0001F680 节点选择"
+- "GEOSITE,telegram,\U0001F680 节点选择"
+- "GEOSITE,linkedin,\U0001F680 节点选择"
+- "GEOSITE,tiktok,\U0001F680 节点选择"
+- "RULE-SET,clashwm,\U0001F680 节点选择"
+# --- 自定义规则 ---
+- RULE-SET,direct_list,🎯 全球直连
+- RULE-SET,proxylite_list,🚀 节点选择
+- RULE-SET,ai_list,🚀 节点选择
+
+# --- 基础与拦截 ---
+- RULE-SET,lan_list,🎯 全球直连
+- RULE-SET,unban_list,🎯 全球直连
+- RULE-SET,ban_ad,\U0001F6D1 全球拦截
+- RULE-SET,fcm_list,🎯 全球直连
+
+# --- 特殊直连规则 ---
+- RULE-SET,google_cn,🎯 全球直连
+- RULE-SET,steam_cn,🎯 全球直连
+
+# --- 代理规则 (🚀 节点选择) ---
+- RULE-SET,github_list,🚀 节点选择
+- RULE-SET,google_list,🚀 节点选择
+- RULE-SET,telegram_list,🚀 节点选择
+- RULE-SET,youtube_list,🚀 节点选择
+- RULE-SET,proxy_media_list,🚀 节点选择
+- RULE-SET,proxy_gfw_list,🚀 节点选择
+- RULE-SET,tiktok_list,🚀 节点选择
+
+# --- 微软与办公 ---
+- RULE-SET,bing_list,🚀 节点选择
+- RULE-SET,onedrive_list,🚀 节点选择
+- RULE-SET,microsoft_list,🚀 节点选择
+
+# --- 苹果服务 ---
+- RULE-SET,apple_list,🚀 节点选择
+
+# --- 测速与工具 ---
+- RULE-SET,speedtest_list,🚀 节点选择
+
+# --- 游戏平台 ---
+- RULE-SET,epic_list,🚀 节点选择
+- RULE-SET,origin_list,🚀 节点选择
+- RULE-SET,sony_list,🚀 节点选择
+- RULE-SET,steam_list,🚀 节点选择
+- RULE-SET,nintendo_list,🚀 节点选择
+
+# --- 媒体流 ---
+- RULE-SET,netflix_list,🚀 节点选择
+- RULE-SET,china_media_list,🚀 节点选择
+
+# --- 国内直连 (🎯 全球直连) ---
+- RULE-SET,china_domain_list,🎯 全球直连
+- RULE-SET,china_ip_list,🎯 全球直连
+- RULE-SET,download_list,🎯 全球直连
+- RULE-SET,china_list,🎯 全球直连
+- "MATCH,\U0001F41F 漏网之鱼"
+
+redir-port: 7892
+tproxy-port: 7895
+port: 7890
+socks-port: 7891
+secret: MiuUs4KW
+bind-address: "*"
+external-ui: "/usr/share/openclash/ui"
+external-ui-name: yacd
+external-ui-url: https://codeload.github.com/MetaCubeX/Yacd-meta/zip/refs/heads/gh-pages
+keep-alive-interval: 15
+keep-alive-idle: 600
+tcp-concurrent: true
+experimental:
+  quic-go-disable-gso: true
+sniffer:
+  enable: true
+  override-destination: true
+  sniff:
+    QUIC:
+      ports:
+      - 443
+    TLS:
+      ports:
+      - 443
+      - 8443
+    HTTP:
+      ports:
+      - 80
+      - 8080-8880
+      override-destination: true
+  force-domain:
+  - "+.netflix.com"
+  - "+.nflxvideo.net"
+  - "+.amazonaws.com"
+  - "+.media.dssott.com"
+  skip-domain:
+  - Mijia Cloud
+  - dlg.io.mi.com
+  - "+.oray.com"
+  - "+.sunlogin.net"
+  - "+.push.apple.com"
+  parse-pure-ip: true
+profile:
+  store-selected: true
+  store-fake-ip: true
+ntp:
+  enable: true
+  server: time.apple.com
+  port: 123
+  interval: 30
+  write-to-system: true
+authentication:
+- Clash:Hk5jxUaL
